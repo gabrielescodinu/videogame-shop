@@ -1,0 +1,34 @@
+2022-10-21T13:23:00+00:00 CRITICAL Uncaught Error: Call to a member function get_id() on null in /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-content/themes/steam/tmpl_home.php:7
+Stack trace:
+#0 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-includes/template-loader.php(106): include()
+#1 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-blog-header.php(19): require_once('/Users/gabriele...')
+#2 /Users/gabrielescodinu/Documents/Sites/steam/app/public/index.php(17): require('/Users/gabriele...')
+#3 {main}
+  thrown in /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-content/themes/steam/tmpl_home.php alla riga 7
+
+2022-10-21T13:27:54+00:00 CRITICAL Uncaught Error: Call to a member function get_categories() on null in /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-content/themes/steam/tmpl_home.php:5
+Stack trace:
+#0 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-includes/template-loader.php(106): include()
+#1 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-blog-header.php(19): require_once('/Users/gabriele...')
+#2 /Users/gabrielescodinu/Documents/Sites/steam/app/public/index.php(17): require('/Users/gabriele...')
+#3 {main}
+  thrown in /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-content/themes/steam/tmpl_home.php alla riga 5
+
+2022-10-21T13:28:08+00:00 CRITICAL Uncaught Error: Call to a member function get_categories() on null in /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-content/themes/steam/tmpl_home.php:6
+Stack trace:
+#0 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-includes/template-loader.php(106): include()
+#1 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-blog-header.php(19): require_once('/Users/gabriele...')
+#2 /Users/gabrielescodinu/Documents/Sites/steam/app/public/index.php(17): require('/Users/gabriele...')
+#3 {main}
+  thrown in /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-content/themes/steam/tmpl_home.php alla riga 6
+
+2022-10-21T13:28:11+00:00 CRITICAL Uncaught Error: Call to a member function get_categories() on null in /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-content/themes/steam/tmpl_home.php:6
+Stack trace:
+#0 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-includes/template-loader.php(106): include()
+#1 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-blog-header.php(19): require_once('/Users/gabriele...')
+#2 /Users/gabrielescodinu/Documents/Sites/steam/app/public/index.php(17): require('/Users/gabriele...')
+#3 {main}
+  thrown in /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-content/themes/steam/tmpl_home.php alla riga 6
+
+2022-10-21T13:34:03+00:00 CRITICAL syntax error, unexpected '}', expecting ';' or ',' in /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-content/themes/steam/tmpl_home.php alla riga 10
+

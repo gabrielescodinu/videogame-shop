@@ -1,0 +1,223 @@
+2022-10-28T09:24:29+00:00 CRITICAL Uncaught Error: Call to a member function get_id() on null in /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-content/themes/steam/archive/archive-product.php:4
+Stack trace:
+#0 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-includes/template.php(772): require()
+#1 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-includes/template.php(716): load_template('/Users/gabriele...', false, Array)
+#2 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-includes/general-template.php(204): locate_template(Array, true, false, Array)
+#3 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-content/themes/steam/page.php(3): get_template_part('archive/archive...')
+#4 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-includes/template-loader.php(106): include('/Users/gabriele...')
+#5 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-blog-header.php(19): require_once('/Users/gabriele...')
+#6 /Users/gabrielescodinu/Documents/Sites/steam/app/public/index.php(17): req in /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-content/themes/steam/archive/archive-product.php alla riga 4
+
+2022-10-28T09:32:56+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on null in /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-content/themes/steam/archive/archive-product.php:29
+Stack trace:
+#0 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-includes/template.php(772): require()
+#1 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-includes/template.php(716): load_template('/Users/gabriele...', false, Array)
+#2 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-includes/general-template.php(204): locate_template(Array, true, false, Array)
+#3 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-content/themes/steam/page.php(3): get_template_part('archive/archive...')
+#4 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-includes/template-loader.php(106): include('/Users/gabriele...')
+#5 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-blog-header.php(19): require_once('/Users/gabriele...')
+#6 /Users/gabrielescodinu/Documents/Sites/steam/app/public/index.php(17): in /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-content/themes/steam/archive/archive-product.php alla riga 29
+
+2022-10-28T09:32:59+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on null in /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-content/themes/steam/archive/archive-product.php:29
+Stack trace:
+#0 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-includes/template.php(772): require()
+#1 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-includes/template.php(716): load_template('/Users/gabriele...', false, Array)
+#2 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-includes/general-template.php(204): locate_template(Array, true, false, Array)
+#3 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-content/themes/steam/page.php(3): get_template_part('archive/archive...')
+#4 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-includes/template-loader.php(106): include('/Users/gabriele...')
+#5 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-blog-header.php(19): require_once('/Users/gabriele...')
+#6 /Users/gabrielescodinu/Documents/Sites/steam/app/public/index.php(17): in /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-content/themes/steam/archive/archive-product.php alla riga 29
+
+2022-10-28T09:34:01+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on null in /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-content/themes/steam/archive/archive-product.php:31
+Stack trace:
+#0 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-includes/template.php(772): require()
+#1 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-includes/template.php(716): load_template('/Users/gabriele...', false, Array)
+#2 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-includes/general-template.php(204): locate_template(Array, true, false, Array)
+#3 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-content/themes/steam/page.php(3): get_template_part('archive/archive...')
+#4 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-includes/template-loader.php(106): include('/Users/gabriele...')
+#5 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-blog-header.php(19): require_once('/Users/gabriele...')
+#6 /Users/gabrielescodinu/Documents/Sites/steam/app/public/index.php(17): in /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-content/themes/steam/archive/archive-product.php alla riga 31
+
+2022-10-28T09:35:50+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on null in /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-content/themes/steam/archive/archive-product.php:29
+Stack trace:
+#0 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-includes/template.php(772): require()
+#1 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-includes/template.php(716): load_template('/Users/gabriele...', false, Array)
+#2 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-includes/general-template.php(204): locate_template(Array, true, false, Array)
+#3 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-content/themes/steam/page.php(3): get_template_part('archive/archive...')
+#4 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-includes/template-loader.php(106): include('/Users/gabriele...')
+#5 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-blog-header.php(19): require_once('/Users/gabriele...')
+#6 /Users/gabrielescodinu/Documents/Sites/steam/app/public/index.php(17): in /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-content/themes/steam/archive/archive-product.php alla riga 29
+
+2022-10-28T09:35:52+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on null in /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-content/themes/steam/archive/archive-product.php:29
+Stack trace:
+#0 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-includes/template.php(772): require()
+#1 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-includes/template.php(716): load_template('/Users/gabriele...', false, Array)
+#2 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-includes/general-template.php(204): locate_template(Array, true, false, Array)
+#3 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-content/themes/steam/page.php(3): get_template_part('archive/archive...')
+#4 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-includes/template-loader.php(106): include('/Users/gabriele...')
+#5 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-blog-header.php(19): require_once('/Users/gabriele...')
+#6 /Users/gabrielescodinu/Documents/Sites/steam/app/public/index.php(17): in /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-content/themes/steam/archive/archive-product.php alla riga 29
+
+2022-10-28T10:07:16+00:00 CRITICAL Uncaught Error: Call to undefined function __toString() in /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-content/themes/steam/archive/archive-product.php:11
+Stack trace:
+#0 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-includes/template.php(772): require()
+#1 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-includes/template.php(716): load_template('/Users/gabriele...', false, Array)
+#2 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-includes/general-template.php(204): locate_template(Array, true, false, Array)
+#3 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-content/themes/steam/page.php(5): get_template_part('archive/archive...')
+#4 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-includes/template-loader.php(106): include('/Users/gabriele...')
+#5 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-blog-header.php(19): require_once('/Users/gabriele...')
+#6 /Users/gabrielescodinu/Documents/Sites/steam/app/public/index.php(17): requi in /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-content/themes/steam/archive/archive-product.php alla riga 11
+
+2022-10-28T10:07:18+00:00 CRITICAL Uncaught Error: Call to undefined function __toString() in /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-content/themes/steam/archive/archive-product.php:11
+Stack trace:
+#0 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-includes/template.php(772): require()
+#1 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-includes/template.php(716): load_template('/Users/gabriele...', false, Array)
+#2 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-includes/general-template.php(204): locate_template(Array, true, false, Array)
+#3 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-content/themes/steam/page.php(5): get_template_part('archive/archive...')
+#4 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-includes/template-loader.php(106): include('/Users/gabriele...')
+#5 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-blog-header.php(19): require_once('/Users/gabriele...')
+#6 /Users/gabrielescodinu/Documents/Sites/steam/app/public/index.php(17): requi in /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-content/themes/steam/archive/archive-product.php alla riga 11
+
+2022-10-28T10:07:25+00:00 CRITICAL Uncaught Error: Call to undefined function toString() in /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-content/themes/steam/archive/archive-product.php:11
+Stack trace:
+#0 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-includes/template.php(772): require()
+#1 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-includes/template.php(716): load_template('/Users/gabriele...', false, Array)
+#2 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-includes/general-template.php(204): locate_template(Array, true, false, Array)
+#3 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-content/themes/steam/page.php(5): get_template_part('archive/archive...')
+#4 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-includes/template-loader.php(106): include('/Users/gabriele...')
+#5 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-blog-header.php(19): require_once('/Users/gabriele...')
+#6 /Users/gabrielescodinu/Documents/Sites/steam/app/public/index.php(17): require in /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-content/themes/steam/archive/archive-product.php alla riga 11
+
+2022-10-28T10:07:26+00:00 CRITICAL Uncaught Error: Call to undefined function toString() in /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-content/themes/steam/archive/archive-product.php:11
+Stack trace:
+#0 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-includes/template.php(772): require()
+#1 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-includes/template.php(716): load_template('/Users/gabriele...', false, Array)
+#2 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-includes/general-template.php(204): locate_template(Array, true, false, Array)
+#3 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-content/themes/steam/page.php(5): get_template_part('archive/archive...')
+#4 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-includes/template-loader.php(106): include('/Users/gabriele...')
+#5 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-blog-header.php(19): require_once('/Users/gabriele...')
+#6 /Users/gabrielescodinu/Documents/Sites/steam/app/public/index.php(17): require in /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-content/themes/steam/archive/archive-product.php alla riga 11
+
+2022-10-28T10:10:37+00:00 CRITICAL syntax error, unexpected ':' in /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-content/themes/steam/archive/archive-product.php alla riga 3
+
+2022-10-28T10:12:07+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function get_page(), 0 passed in /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-content/themes/steam/archive/archive-product.php on line 3 and at least 1 expected in /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-includes/post.php:5610
+Stack trace:
+#0 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-content/themes/steam/archive/archive-product.php(3): get_page()
+#1 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-includes/template.php(772): require('/Users/gabriele...')
+#2 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-includes/template.php(716): load_template('/Users/gabriele...', false, Array)
+#3 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-includes/general-template.php(204): locate_template(Array, true, false, Array)
+#4 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-content/themes/steam/page.php(5): get_template_part('archive/archive...')
+#5 /Users/gabrielescodinu/Documents/Si in /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-includes/post.php alla riga 5610
+
+2022-10-28T10:14:30+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on null in /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-content/themes/steam/archive/archive-product.php:46
+Stack trace:
+#0 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-includes/template.php(772): require()
+#1 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-includes/template.php(716): load_template('/Users/gabriele...', false, Array)
+#2 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-includes/general-template.php(204): locate_template(Array, true, false, Array)
+#3 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-content/themes/steam/page.php(5): get_template_part('archive/archive...')
+#4 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-includes/template-loader.php(106): include('/Users/gabriele...')
+#5 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-blog-header.php(19): require_once('/Users/gabriele...')
+#6 /Users/gabrielescodinu/Documents/Sites/steam/app/public/index.php(17): in /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-content/themes/steam/archive/archive-product.php alla riga 46
+
+2022-10-28T10:15:25+00:00 CRITICAL Uncaught Error: Call to undefined function get_price() in /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-content/themes/steam/archive/archive-product.php:46
+Stack trace:
+#0 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-includes/template.php(772): require()
+#1 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-includes/template.php(716): load_template('/Users/gabriele...', false, Array)
+#2 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-includes/general-template.php(204): locate_template(Array, true, false, Array)
+#3 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-content/themes/steam/page.php(5): get_template_part('archive/archive...')
+#4 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-includes/template-loader.php(106): include('/Users/gabriele...')
+#5 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-blog-header.php(19): require_once('/Users/gabriele...')
+#6 /Users/gabrielescodinu/Documents/Sites/steam/app/public/index.php(17): requir in /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-content/themes/steam/archive/archive-product.php alla riga 46
+
+2022-10-28T10:16:27+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on null in /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-content/themes/steam/archive/archive-product.php:39
+Stack trace:
+#0 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-includes/template.php(772): require()
+#1 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-includes/template.php(716): load_template('/Users/gabriele...', false, Array)
+#2 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-includes/general-template.php(204): locate_template(Array, true, false, Array)
+#3 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-content/themes/steam/page.php(5): get_template_part('archive/archive...')
+#4 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-includes/template-loader.php(106): include('/Users/gabriele...')
+#5 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-blog-header.php(19): require_once('/Users/gabriele...')
+#6 /Users/gabrielescodinu/Documents/Sites/steam/app/public/index.php(17): in /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-content/themes/steam/archive/archive-product.php alla riga 39
+
+2022-10-28T10:16:35+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on null in /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-content/themes/steam/archive/archive-product.php:31
+Stack trace:
+#0 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-includes/template.php(772): require()
+#1 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-includes/template.php(716): load_template('/Users/gabriele...', false, Array)
+#2 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-includes/general-template.php(204): locate_template(Array, true, false, Array)
+#3 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-content/themes/steam/page.php(5): get_template_part('archive/archive...')
+#4 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-includes/template-loader.php(106): include('/Users/gabriele...')
+#5 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-blog-header.php(19): require_once('/Users/gabriele...')
+#6 /Users/gabrielescodinu/Documents/Sites/steam/app/public/index.php(17): in /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-content/themes/steam/archive/archive-product.php alla riga 31
+
+2022-10-28T10:17:05+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on null in /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-content/themes/steam/archive/archive-product.php:41
+Stack trace:
+#0 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-includes/template.php(772): require()
+#1 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-includes/template.php(716): load_template('/Users/gabriele...', false, Array)
+#2 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-includes/general-template.php(204): locate_template(Array, true, false, Array)
+#3 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-content/themes/steam/page.php(5): get_template_part('archive/archive...')
+#4 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-includes/template-loader.php(106): include('/Users/gabriele...')
+#5 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-blog-header.php(19): require_once('/Users/gabriele...')
+#6 /Users/gabrielescodinu/Documents/Sites/steam/app/public/index.php(17): in /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-content/themes/steam/archive/archive-product.php alla riga 41
+
+2022-10-28T10:17:53+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on null in /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-content/themes/steam/archive/archive-product.php:41
+Stack trace:
+#0 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-includes/template.php(772): require()
+#1 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-includes/template.php(716): load_template('/Users/gabriele...', false, Array)
+#2 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-includes/general-template.php(204): locate_template(Array, true, false, Array)
+#3 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-content/themes/steam/page.php(5): get_template_part('archive/archive...')
+#4 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-includes/template-loader.php(106): include('/Users/gabriele...')
+#5 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-blog-header.php(19): require_once('/Users/gabriele...')
+#6 /Users/gabrielescodinu/Documents/Sites/steam/app/public/index.php(17): in /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-content/themes/steam/archive/archive-product.php alla riga 41
+
+2022-10-28T10:18:20+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on null in /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-content/themes/steam/archive/archive-product.php:41
+Stack trace:
+#0 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-includes/template.php(772): require()
+#1 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-includes/template.php(716): load_template('/Users/gabriele...', false, Array)
+#2 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-includes/general-template.php(204): locate_template(Array, true, false, Array)
+#3 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-content/themes/steam/page.php(5): get_template_part('archive/archive...')
+#4 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-includes/template-loader.php(106): include('/Users/gabriele...')
+#5 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-blog-header.php(19): require_once('/Users/gabriele...')
+#6 /Users/gabrielescodinu/Documents/Sites/steam/app/public/index.php(17): in /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-content/themes/steam/archive/archive-product.php alla riga 41
+
+2022-10-28T10:29:22+00:00 CRITICAL syntax error, unexpected 'array' (T_ARRAY), expecting ')' in /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-content/themes/steam/archive/archive-product.php alla riga 32
+
+2022-10-28T10:43:52+00:00 CRITICAL Uncaught Error: Call to undefined function get_uri() in /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-content/themes/steam/single/single-product.php:17
+Stack trace:
+#0 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-includes/template.php(772): require()
+#1 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-includes/template.php(716): load_template('/Users/gabriele...', false, Array)
+#2 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-includes/general-template.php(204): locate_template(Array, true, false, Array)
+#3 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-content/themes/steam/single.php(5): get_template_part('single/single-p...')
+#4 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-includes/template-loader.php(106): include('/Users/gabriele...')
+#5 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-blog-header.php(19): require_once('/Users/gabriele...')
+#6 /Users/gabrielescodinu/Documents/Sites/steam/app/public/index.php(17): require( in /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-content/themes/steam/single/single-product.php alla riga 17
+
+2022-10-28T10:50:32+00:00 CRITICAL Uncaught Error: Call to undefined function get_id() in /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-content/themes/steam/single/single-product.php:17
+Stack trace:
+#0 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-includes/template.php(772): require()
+#1 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-includes/template.php(716): load_template('/Users/gabriele...', false, Array)
+#2 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-includes/general-template.php(204): locate_template(Array, true, false, Array)
+#3 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-content/themes/steam/single.php(5): get_template_part('single/single-p...')
+#4 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-includes/template-loader.php(106): include('/Users/gabriele...')
+#5 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-blog-header.php(19): require_once('/Users/gabriele...')
+#6 /Users/gabrielescodinu/Documents/Sites/steam/app/public/index.php(17): require(' in /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-content/themes/steam/single/single-product.php alla riga 17
+
+2022-10-28T10:50:34+00:00 CRITICAL Uncaught Error: Call to undefined function get_id() in /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-content/themes/steam/single/single-product.php:17
+Stack trace:
+#0 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-includes/template.php(772): require()
+#1 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-includes/template.php(716): load_template('/Users/gabriele...', false, Array)
+#2 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-includes/general-template.php(204): locate_template(Array, true, false, Array)
+#3 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-content/themes/steam/single.php(5): get_template_part('single/single-p...')
+#4 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-includes/template-loader.php(106): include('/Users/gabriele...')
+#5 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-blog-header.php(19): require_once('/Users/gabriele...')
+#6 /Users/gabrielescodinu/Documents/Sites/steam/app/public/index.php(17): require(' in /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-content/themes/steam/single/single-product.php alla riga 17
+
+2022-10-28T10:52:57+00:00 CRITICAL syntax error, unexpected 'array' (T_ARRAY), expecting ')' in /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-content/themes/steam/archive/archive-product.php alla riga 32
+
+2022-10-28T10:52:58+00:00 CRITICAL syntax error, unexpected 'array' (T_ARRAY), expecting ')' in /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-content/themes/steam/archive/archive-product.php alla riga 32
+
+2022-10-28T11:01:12+00:00 CRITICAL syntax error, unexpected 'if' (T_IF), expecting ')' in /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-content/themes/steam/archive/archive-product.php alla riga 25
+
+2022-10-28T17:26:48+00:00 CRITICAL syntax error, unexpected ';' in /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-content/themes/steam/page.php alla riga 5
+
+2022-10-28T17:27:49+00:00 CRITICAL syntax error, unexpected ';' in /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-content/themes/steam/page.php alla riga 5
+
