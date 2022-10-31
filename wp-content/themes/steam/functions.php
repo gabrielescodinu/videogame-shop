@@ -170,7 +170,6 @@ function cc_mime_types($mimes) {
 }
 add_filter('upload_mimes', 'cc_mime_types');
 
-
 // custom logo
 add_theme_support( 'custom-logo' );
 function themename_custom_logo_setup() {
@@ -195,21 +194,12 @@ function limit_text($text, $limit) {
         $text  = substr($text, 0, $pos[$limit]) . '...';
     }
     return $text;
-  }
-
-
-  add_action( 'pre_get_posts',  'set_posts_per_page'  );
-function set_posts_per_page( $query ) {
-
-  global $wp_the_query;
-
-  if ( ( ! is_admin() ) && ( $query === $wp_the_query ) && ( $query->is_search() ) ) {
-    $query->set( 'posts_per_page', 5 );
-  }
-  elseif ( ( ! is_admin() ) && ( $query === $wp_the_query ) && ( $query->is_archive() ) ) {
-    $query->set( 'posts_per_page', 2 );
-  }
-  // Etc..
-
-  return $query;
 }
+
+// select your post type to find in search.php
+function tg_exclude_pages_from_search_results( $query ) {
+    if ( $query->is_main_query() && $query->is_search() && ! is_admin() ) {
+        $query->set( 'post_type', array( 'product' ) );
+    }    
+}
+add_action( 'pre_get_posts', 'tg_exclude_pages_from_search_results' );

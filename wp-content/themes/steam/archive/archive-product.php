@@ -22,7 +22,7 @@
                 <?php
                     $args = array(
                         'post_type' => 'product',
-                        'posts_per_page' => '3',
+                        'posts_per_page' => '9',
                         'order' => 'DESC',
                         'orderby' => 'publish_date',
                         'post_status'    => 'publish',
@@ -64,6 +64,7 @@
             <?php
                 $args = array(
                     'post_type' => 'product',
+                    'posts_per_page' => '9',
                     'order' => 'DESC',
                     'orderby' => 'publish_date',
                     'post_status'    => 'publish',
