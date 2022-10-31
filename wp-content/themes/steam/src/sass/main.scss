@@ -138,7 +138,7 @@ textarea:focus, input:focus{
 
 /* button call to action */
 .slide:hover, .slide:focus {
-  box-shadow: inset 12em 0 0 0 var(--hover);
+  box-shadow: inset 13em 0 0 0 var(--hover);
 }
 .slide {
   --hover: #66c0f4;
@@ -190,27 +190,27 @@ button:hover, button:focus {
 }
 
 
-
+/* videogame-card */
 .videogame-card {
   transition: 0.5s;
 }
 .videogame-card:hover {
   transition: 0.5s;
-  border: 3px solid white !important;
+  border: 2px solid white !important;
   box-shadow: 0 0 0px #66c0f4, 0 0 0px #66c0f4, 0 0 2px #66c0f4, 0 0 20px #66c0f4;
 }
 .genre-card {
   transition: 0.5s;
-  border: 3px solid #121212 !important;
+  border: 2px solid #121212 !important;
 }
 .genre-card:hover {
   transition: 0.5s;
-  border: 3px solid white !important;
+  border: 2px solid white !important;
   box-shadow: 0 0 0px #66c0f4, 0 0 0px #66c0f4, 0 0 2px #66c0f4, 0 0 20px #66c0f4;
 }
 
 
-
+/* navigation */
 .navigation {
   width: 100% !important;
 }
@@ -228,3 +228,4 @@ button:hover, button:focus {
     transition: 0.5s;
   }
 }
+

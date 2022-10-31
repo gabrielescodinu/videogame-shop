@@ -1,2 +1,62 @@
 2022-10-31T10:51:32+00:00 CRITICAL syntax error, unexpected ''order'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /Users/gabrielescodinu/Documents/Sites/videogameshop/app/public/wp-content/themes/steam/archive/archive-product.php alla riga 26
 
+2022-10-31T12:09:51+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Cart::get_product_total() in /Users/gabrielescodinu/Documents/Sites/videogameshop/app/public/wp-content/themes/steam/cart.php:15
+Stack trace:
+#0 /Users/gabrielescodinu/Documents/Sites/videogameshop/app/public/wp-includes/template.php(772): require()
+#1 /Users/gabrielescodinu/Documents/Sites/videogameshop/app/public/wp-includes/template.php(716): load_template('/Users/gabriele...', false, Array)
+#2 /Users/gabrielescodinu/Documents/Sites/videogameshop/app/public/wp-includes/general-template.php(204): locate_template(Array, true, false, Array)
+#3 /Users/gabrielescodinu/Documents/Sites/videogameshop/app/public/wp-content/themes/steam/page.php(5): get_template_part('cart')
+#4 /Users/gabrielescodinu/Documents/Sites/videogameshop/app/public/wp-includes/template-loader.php(106): include('/Users/gabriele...')
+#5 /Users/gabrielescodinu/Documents/Sites/videogameshop/app/public/wp-blog-header.php(19): require_once('/Users/gabriele...')
+#6 /Users/gabrielescodinu/Documents/Sites/ in /Users/gabrielescodinu/Documents/Sites/videogameshop/app/public/wp-content/themes/steam/cart.php alla riga 15
+
+2022-10-31T12:11:56+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Simple::wp_get_attachment_image_src() in /Users/gabrielescodinu/Documents/Sites/videogameshop/app/public/wp-content/themes/steam/cart.php:13
+Stack trace:
+#0 /Users/gabrielescodinu/Documents/Sites/videogameshop/app/public/wp-includes/template.php(772): require()
+#1 /Users/gabrielescodinu/Documents/Sites/videogameshop/app/public/wp-includes/template.php(716): load_template('/Users/gabriele...', false, Array)
+#2 /Users/gabrielescodinu/Documents/Sites/videogameshop/app/public/wp-includes/general-template.php(204): locate_template(Array, true, false, Array)
+#3 /Users/gabrielescodinu/Documents/Sites/videogameshop/app/public/wp-content/themes/steam/page.php(5): get_template_part('cart')
+#4 /Users/gabrielescodinu/Documents/Sites/videogameshop/app/public/wp-includes/template-loader.php(106): include('/Users/gabriele...')
+#5 /Users/gabrielescodinu/Documents/Sites/videogameshop/app/public/wp-blog-header.php(19): require_once('/Users/gabriele...')
+#6 /Users/gabrielescod in /Users/gabrielescodinu/Documents/Sites/videogameshop/app/public/wp-content/themes/steam/cart.php alla riga 13
+
+2022-10-31T12:12:16+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Simple::get_the_post_thumbnail_url() in /Users/gabrielescodinu/Documents/Sites/videogameshop/app/public/wp-content/themes/steam/cart.php:13
+Stack trace:
+#0 /Users/gabrielescodinu/Documents/Sites/videogameshop/app/public/wp-includes/template.php(772): require()
+#1 /Users/gabrielescodinu/Documents/Sites/videogameshop/app/public/wp-includes/template.php(716): load_template('/Users/gabriele...', false, Array)
+#2 /Users/gabrielescodinu/Documents/Sites/videogameshop/app/public/wp-includes/general-template.php(204): locate_template(Array, true, false, Array)
+#3 /Users/gabrielescodinu/Documents/Sites/videogameshop/app/public/wp-content/themes/steam/page.php(5): get_template_part('cart')
+#4 /Users/gabrielescodinu/Documents/Sites/videogameshop/app/public/wp-includes/template-loader.php(106): include('/Users/gabriele...')
+#5 /Users/gabrielescodinu/Documents/Sites/videogameshop/app/public/wp-blog-header.php(19): require_once('/Users/gabriele...')
+#6 /Users/gabrielescodi in /Users/gabrielescodinu/Documents/Sites/videogameshop/app/public/wp-content/themes/steam/cart.php alla riga 13
+
+2022-10-31T12:12:18+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Simple::get_the_post_thumbnail_url() in /Users/gabrielescodinu/Documents/Sites/videogameshop/app/public/wp-content/themes/steam/cart.php:13
+Stack trace:
+#0 /Users/gabrielescodinu/Documents/Sites/videogameshop/app/public/wp-includes/template.php(772): require()
+#1 /Users/gabrielescodinu/Documents/Sites/videogameshop/app/public/wp-includes/template.php(716): load_template('/Users/gabriele...', false, Array)
+#2 /Users/gabrielescodinu/Documents/Sites/videogameshop/app/public/wp-includes/general-template.php(204): locate_template(Array, true, false, Array)
+#3 /Users/gabrielescodinu/Documents/Sites/videogameshop/app/public/wp-content/themes/steam/page.php(5): get_template_part('cart')
+#4 /Users/gabrielescodinu/Documents/Sites/videogameshop/app/public/wp-includes/template-loader.php(106): include('/Users/gabriele...')
+#5 /Users/gabrielescodinu/Documents/Sites/videogameshop/app/public/wp-blog-header.php(19): require_once('/Users/gabriele...')
+#6 /Users/gabrielescodi in /Users/gabrielescodinu/Documents/Sites/videogameshop/app/public/wp-content/themes/steam/cart.php alla riga 13
+
+2022-10-31T12:12:20+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Simple::get_the_post_thumbnail_url() in /Users/gabrielescodinu/Documents/Sites/videogameshop/app/public/wp-content/themes/steam/cart.php:13
+Stack trace:
+#0 /Users/gabrielescodinu/Documents/Sites/videogameshop/app/public/wp-includes/template.php(772): require()
+#1 /Users/gabrielescodinu/Documents/Sites/videogameshop/app/public/wp-includes/template.php(716): load_template('/Users/gabriele...', false, Array)
+#2 /Users/gabrielescodinu/Documents/Sites/videogameshop/app/public/wp-includes/general-template.php(204): locate_template(Array, true, false, Array)
+#3 /Users/gabrielescodinu/Documents/Sites/videogameshop/app/public/wp-content/themes/steam/page.php(5): get_template_part('cart')
+#4 /Users/gabrielescodinu/Documents/Sites/videogameshop/app/public/wp-includes/template-loader.php(106): include('/Users/gabriele...')
+#5 /Users/gabrielescodinu/Documents/Sites/videogameshop/app/public/wp-blog-header.php(19): require_once('/Users/gabriele...')
+#6 /Users/gabrielescodi in /Users/gabrielescodinu/Documents/Sites/videogameshop/app/public/wp-content/themes/steam/cart.php alla riga 13
+
+2022-10-31T12:18:59+00:00 CRITICAL Uncaught Error: Call to a member function get_title() on null in /Users/gabrielescodinu/Documents/Sites/videogameshop/app/public/wp-content/themes/steam/cart.php:10
+Stack trace:
+#0 /Users/gabrielescodinu/Documents/Sites/videogameshop/app/public/wp-includes/template.php(772): require()
+#1 /Users/gabrielescodinu/Documents/Sites/videogameshop/app/public/wp-includes/template.php(716): load_template('/Users/gabriele...', false, Array)
+#2 /Users/gabrielescodinu/Documents/Sites/videogameshop/app/public/wp-includes/general-template.php(204): locate_template(Array, true, false, Array)
+#3 /Users/gabrielescodinu/Documents/Sites/videogameshop/app/public/wp-content/themes/steam/page.php(5): get_template_part('cart')
+#4 /Users/gabrielescodinu/Documents/Sites/videogameshop/app/public/wp-includes/template-loader.php(106): include('/Users/gabriele...')
+#5 /Users/gabrielescodinu/Documents/Sites/videogameshop/app/public/wp-blog-header.php(19): require_once('/Users/gabriele...')
+#6 /Users/gabrielescodinu/Documents/Sites/videogam in /Users/gabrielescodinu/Documents/Sites/videogameshop/app/public/wp-content/themes/steam/cart.php alla riga 10
+
