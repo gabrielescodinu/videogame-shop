@@ -35,6 +35,6 @@
                 <p><?php _e( 'No Search Results found', 'nd_dosth' ); ?></p>
         <?php endif; ?>
     </div>
-    <div class="w-full lg:w-1/3 mx-auto mt-8 text-sm"><?php the_posts_pagination(); ?></div>
+    <div class="w-full lg:w-1/3 mx-auto flex justify-between mt-8 text-sm"><?php the_posts_pagination(); ?></div>
 </div>
 <?php get_footer(); ?>

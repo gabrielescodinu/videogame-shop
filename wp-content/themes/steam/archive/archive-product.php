@@ -13,16 +13,17 @@
     </form>    
 </div>
 
-<?php 
-    if ( $page_title != 'Shop' ) { ?>
-        <!-- last posts by category -->
-        <div class="p-8 lg:px-24 4xl:px-96 pb-24 text-white">
-            <p data-aos="fade-up" class="text-2xl font-bold mb-8"><?php echo $page_title ?></p>
-            <div data-aos="fade-up" class="mt-8 grid grid-cols-1 lg:grid-cols-4 gap-4">
-                <?php
-                    $args = array(
-                        'post_type' => 'product',
-                        'posts_per_page' => '9',
+<?php if ( $page_title != 'Shop' ) { ?>
+    <!-- last posts by category -->
+    <div class="p-8 lg:px-24 4xl:px-96 pb-24 text-white">
+        <p data-aos="fade-up" class="text-2xl font-bold mb-8"><?php echo $page_title ?></p>
+        <div data-aos="fade-up" class="mt-8 grid grid-cols-1 lg:grid-cols-4 gap-4">
+            <?php
+                $query = new WP_Query( 
+                    array(
+                        'posts_per_page'=> 3,
+                        'post_type'=>'product',
+                        'paged' => get_query_var('paged') ? get_query_var('paged') : 1,
                         'order' => 'DESC',
                         'orderby' => 'publish_date',
                         'post_status'    => 'publish',
@@ -39,56 +40,87 @@
                                 'terms' => $page_title,
                             ),
                         ),
-                    );
-                    $loop = new WP_Query($args);
-                    if ($loop->have_posts()) : while ($loop->have_posts()) : $loop->the_post();?>
-                        <a class="videogame-card" style="border: 3px solid #121212" href="<?php echo get_permalink() ?>">
-                            <div class="h-96 flex flex-col justify-end relative" style="background-image: url('<?php echo get_the_post_thumbnail_url() ?>'); background-size: cover; background-position: center;">
-                                <div style="border-bottom-right-radius: 10px;" class="bg-green-500 absolute top-0 p-2 text-xs">-20 %</div>
-                                <div style="background-color: rgba(0, 0, 0, 0.5);" class="px-8 py-4">
-                                    <?php $price = get_post_meta( get_the_ID(), '_price', true ); ?>
-                                    <p><?php echo get_the_title(); ?></p>
-                                    <p class="text-sm text-steam-blue"><?php echo wc_price( $price ); ?></p>
-                                </div>
-                            </div>
-                        </a>
-                    <?php endwhile; else: ?>
-                <?php endif; wp_reset_query(); ?>
-            </div>
-        </div> <?php
-    } else { ?>
-        <!-- last posts -->
-        <div class="p-8 lg:px-24 4xl:px-96 pb-24 text-white">
+                    ) 
+                ); 
+            ?>
+            <?php while ($query -> have_posts()) : $query -> the_post(); ?>
+                <a class="videogame-card" style="border: 3px solid #121212" href="<?php echo get_permalink() ?>">
+                    <div class="h-96 flex flex-col justify-end relative" style="background-image: url('<?php echo get_the_post_thumbnail_url() ?>'); background-size: cover; background-position: center;">
+                        <div style="border-bottom-right-radius: 10px;" class="bg-green-500 absolute top-0 p-2 text-xs">-20 %</div>
+                        <div style="background-color: rgba(0, 0, 0, 0.5);" class="px-8 py-4">
+                            <?php $price = get_post_meta( get_the_ID(), '_price', true ); ?>
+                            <p><?php echo get_the_title(); ?></p>
+                            <p class="text-sm text-steam-blue"><?php echo wc_price( $price ); ?></p>
+                        </div>
+                    </div>
+                </a>
+            <?php endwhile; ?>
+        </div>
+        <!-- pagination -->
+        <div class="w-full lg:w-1/3 mx-auto flex justify-between mt-8 text-sm">
+            <?php
+                $total_pages = $query->max_num_pages;
+                if ($total_pages > 1){
+                    $big = 999999999; // need an unlikely integer
+                    echo paginate_links( array(
+                        'base' => str_replace( $big, '%#%', get_pagenum_link( $big ) ),
+                        'format' => '?paged=%#%',
+                        'current' => max( 1, get_query_var('paged') ),
+                        'total' => $query->max_num_pages
+                    ) );
+                }
+                wp_reset_postdata();
+            ?>
+        </div>
+    </div>
+<?php } else { ?>
+    <!-- shop page -->
+    <div class="p-8 lg:px-24 4xl:px-96 pb-24 text-white">
         <p data-aos="fade-up" class="text-2xl font-bold mb-8"><?php echo $page_title ?></p>
         <div data-aos="fade-up" class="mt-8 grid grid-cols-1 lg:grid-cols-4 gap-4">
             <?php
-                $args = array(
-                    'post_type' => 'product',
-                    'posts_per_page' => '9',
-                    'order' => 'DESC',
-                    'orderby' => 'publish_date',
-                    'post_status'    => 'publish',
-                );
-                $loop = new WP_Query($args);
-                if ($loop->have_posts()) : while ($loop->have_posts()) : $loop->the_post();?>
-                    <a class="videogame-card" style="border: 3px solid #121212" href="<?php echo get_permalink() ?>">
-                        <div class="h-96 flex flex-col justify-end relative" style="background-image: url('<?php echo get_the_post_thumbnail_url() ?>'); background-size: cover; background-position: center;">
-                            <div style="border-bottom-right-radius: 10px;" class="bg-green-500 absolute top-0 p-2 text-xs">-20 %</div>
-                            <div style="background-color: rgba(0, 0, 0, 0.5);" class="px-8 py-4">
-                                <?php $price = get_post_meta( get_the_ID(), '_price', true ); ?>
-                                <p><?php echo get_the_title(); ?></p>
-                                <p class="text-sm text-steam-blue"><?php echo wc_price( $price ); ?></p>
-                            </div>
+                $query = new WP_Query( 
+                    array(
+                        'posts_per_page'=> 1,
+                        'post_type'=>'product',
+                        'paged' => get_query_var('paged') ? get_query_var('paged') : 1,
+                        'order' => 'DESC',
+                        'orderby' => 'publish_date',
+                        'post_status'    => 'publish',
+                    ) 
+                ); 
+            ?>
+            <?php while ($query -> have_posts()) : $query -> the_post(); ?>
+                <a class="videogame-card" style="border: 3px solid #121212" href="<?php echo get_permalink() ?>">
+                    <div class="h-96 flex flex-col justify-end relative" style="background-image: url('<?php echo get_the_post_thumbnail_url() ?>'); background-size: cover; background-position: center;">
+                        <div style="border-bottom-right-radius: 10px;" class="bg-green-500 absolute top-0 p-2 text-xs">-20 %</div>
+                        <div style="background-color: rgba(0, 0, 0, 0.5);" class="px-8 py-4">
+                            <?php $price = get_post_meta( get_the_ID(), '_price', true ); ?>
+                            <p><?php echo get_the_title(); ?></p>
+                            <p class="text-sm text-steam-blue"><?php echo wc_price( $price ); ?></p>
                         </div>
-                    </a>
-                <?php endwhile; else: ?>
-            <?php endif; wp_reset_query(); ?>
+                    </div>
+                </a>
+            <?php endwhile; ?>
         </div>
-        </div> <?php
-    } ?>
-
-<div class="w-full lg:w-1/3 mx-auto mt-8 text-sm"><?php the_posts_pagination(); ?></div>
-
+        <!-- pagination -->
+        <div class="w-full lg:w-1/3 mx-auto flex justify-between mt-8 text-sm">
+            <?php
+                $total_pages = $query->max_num_pages;
+                if ($total_pages > 1){
+                    $big = 999999999; // need an unlikely integer
+                    echo paginate_links( array(
+                        'base' => str_replace( $big, '%#%', get_pagenum_link( $big ) ),
+                        'format' => '?paged=%#%',
+                        'current' => max( 1, get_query_var('paged') ),
+                        'total' => $query->max_num_pages
+                    ) );
+                }
+                wp_reset_postdata();
+            ?>
+        </div>
+    </div>
+<?php } ?>
 
 <!-- get footer -->
 <?php get_footer(); ?>
