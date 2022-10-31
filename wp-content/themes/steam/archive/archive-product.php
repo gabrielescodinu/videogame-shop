@@ -21,7 +21,7 @@
             <?php
                 $query = new WP_Query( 
                     array(
-                        'posts_per_page'=> 3,
+                        'posts_per_page'=> 4,
                         'post_type'=>'product',
                         'paged' => get_query_var('paged') ? get_query_var('paged') : 1,
                         'order' => 'DESC',
@@ -57,11 +57,11 @@
             <?php endwhile; ?>
         </div>
         <!-- pagination -->
-        <div class="w-full lg:w-1/3 mx-auto flex justify-between mt-8 text-sm">
+        <div data-aos="fade-up" class="w-full lg:w-1/3 mx-auto flex justify-between mt-8 text-sm">
             <?php
                 $total_pages = $query->max_num_pages;
                 if ($total_pages > 1){
-                    $big = 999999999; // need an unlikely integer
+                    $big = 999999999;
                     echo paginate_links( array(
                         'base' => str_replace( $big, '%#%', get_pagenum_link( $big ) ),
                         'format' => '?paged=%#%',
@@ -81,7 +81,7 @@
             <?php
                 $query = new WP_Query( 
                     array(
-                        'posts_per_page'=> 1,
+                        'posts_per_page'=> 4,
                         'post_type'=>'product',
                         'paged' => get_query_var('paged') ? get_query_var('paged') : 1,
                         'order' => 'DESC',
@@ -104,11 +104,11 @@
             <?php endwhile; ?>
         </div>
         <!-- pagination -->
-        <div class="w-full lg:w-1/3 mx-auto flex justify-between mt-8 text-sm">
+        <div data-aos="fade-up" class="w-full lg:w-1/3 mx-auto flex justify-between mt-8 text-sm">
             <?php
                 $total_pages = $query->max_num_pages;
                 if ($total_pages > 1){
-                    $big = 999999999; // need an unlikely integer
+                    $big = 999999999;
                     echo paginate_links( array(
                         'base' => str_replace( $big, '%#%', get_pagenum_link( $big ) ),
                         'format' => '?paged=%#%',

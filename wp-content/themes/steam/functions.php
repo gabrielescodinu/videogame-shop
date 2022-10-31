@@ -207,7 +207,7 @@ add_action( 'pre_get_posts', 'tg_exclude_pages_from_search_results' );
 
 //fixing pagination of custom post type
 function custom_posts_per_page( $query ) {
-    if ( $query->is_archive('projects') ) {
+    if ( $query->is_archive('product') ) {
         set_query_var('posts_per_page', 1);
     }
 }

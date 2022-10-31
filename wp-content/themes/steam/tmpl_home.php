@@ -11,7 +11,7 @@
             $args = array(
                 'post_type' => 'product',
                 'posts_per_page' => '6',
-                'order' => 'DESC',
+                'order' => 'ASC',
                 'orderby' => 'menu_order',
                 'post_status'    => 'publish',
             );
