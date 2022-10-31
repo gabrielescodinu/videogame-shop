@@ -17,13 +17,13 @@
             $cart_item_remove_url = wc_get_cart_remove_url( $cart_item_key );
             $subtotal = WC()->cart->get_product_subtotal( $product, $cart_item['quantity'] );
             $link = $product->get_permalink( $cart_item ); ?>
-            <div class="flex justify-between items-center mt-8 bg-gradient-to-r from-steam-darkblue to-steam-dark p-4">
+            <div class="lg:flex justify-between items-center mt-8 bg-gradient-to-r from-steam-darkblue to-steam-dark p-4">
                 <div class="flex items-center">
                     <a class="mr-4 hover:text-red-500" href="<?php echo $cart_item_remove_url ?>"><i class="fa-solid fa-trash-can"></i></a>  
-                    <a href="<?php echo $link ?>"><div class="h-60 w-40 videogame-card border-2 border-steam-grey" style="background-image: url('<?php echo $product_image ?>'); background-size: cover; background-position: center;"></div></a>
+                    <a href="<?php echo $link ?>"><div class="h-60 w-52 videogame-card border-2 border-steam-grey" style="background-image: url('<?php echo $product_image ?>'); background-size: cover; background-position: center;"></div></a>
                 </div>
-                <p class="ml-4"><?php echo $product_name ?></p>
-                <p class="ml-4 text-steam-blue"><?php echo $subtotal ?></p>
+                <p class="ml-8 lg:ml-4 mt-4 lg:mt-0"><?php echo $product_name ?></p>
+                <p class="ml-8 lg:ml-4 text-steam-blue"><?php echo $subtotal ?></p>
             </div>
         
     <?php } ?>
@@ -31,7 +31,7 @@
     <?php $payment_page_url = get_permalink( wc_get_page_id( 'checkout' ) ); ?>
     
     <div data-aos="fade-up" class="lg:flex items-center justify-between">
-        <div class="mt-8"><a href="<?php echo $payment_page_url ?>"><button style="border: 3px solid #66c0f4" class="slide uppercase font-bold text-xl px-8 py-2 mt-4 lg:mt-0 text-white">Go to payment <i class="fa-solid fa-arrow-right"></i></button></a></div>
+        <div class="mt-8"><a href="<?php echo $payment_page_url ?>"><button style="border: 3px solid #66c0f4" class="slide uppercase font-bold text-xl px-8 py-2 mt-4 lg:mt-0 text-white">Checkout <i class="fa-solid fa-arrow-right"></i></button></a></div>
         <div class="text-2xl mt-4 lg:mt-0">$<?php echo $total ?></div>
     </div>
 

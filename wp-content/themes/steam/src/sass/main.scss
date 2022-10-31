@@ -26,11 +26,6 @@ body {
   background-color: #121212;
 }
 
-
-textarea:focus, input:focus{
-  outline: none;
-}
-
 /* swiper js */
 .swiper-scrollbar-drag {
   background-color: #66c0f4 !important;
@@ -138,7 +133,7 @@ textarea:focus, input:focus{
 
 /* button call to action */
 .slide:hover, .slide:focus {
-  box-shadow: inset 13em 0 0 0 var(--hover);
+  box-shadow: inset 12em 0 0 0 var(--hover);
 }
 .slide {
   --hover: #66c0f4;
@@ -189,7 +184,6 @@ button:hover, button:focus {
   margin-right: 10px;
 }
 
-
 /* videogame-card */
 .videogame-card {
   transition: 0.5s;
@@ -208,7 +202,6 @@ button:hover, button:focus {
   border: 2px solid white !important;
   box-shadow: 0 0 0px #66c0f4, 0 0 0px #66c0f4, 0 0 2px #66c0f4, 0 0 20px #66c0f4;
 }
-
 
 /* navigation */
 .navigation {
@@ -229,3 +222,23 @@ button:hover, button:focus {
   }
 }
 
+/* checkout customization */
+.checkout input {
+  background-color: transparent !important;
+  padding: 5px 10px !important;
+  margin: 10px 0px !important;
+  border-bottom: 1px solid white !important;
+}
+.checkout textarea {
+  background-color: transparent !important;
+  padding: 5px 10px !important;
+  margin: 10px 0px !important;
+  border: 1px solid white !important;
+}
+.checkout select {
+  margin: 0px 10px !important;
+}
+.checkout .select2-selection {
+  border-radius: 0px !important;  
+  border: 0px solid white !important;
+}
