@@ -1,4 +1,7 @@
-<!-- get header -->
+<?php
+    // Template Name: Account
+    get_header(); 
+?>
 <?php get_header(); ?>
 <?php $page_title = get_the_title(); ?>
 

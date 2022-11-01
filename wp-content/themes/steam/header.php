@@ -41,24 +41,7 @@
     
                 <div id="menu" class="flex flex-col justify-center w-screen h-screen z-10 fixed swipe swipe-left bg-steam-darkblue" :class="!open ? '' : 'swipe-right'">
                     <div class="p-8 lg:px-24 4xl:px-96 flex flex-col text-white">
-                        <div class="mb-4 menu_item" :class="!open ? 'exit' : 'active'"> 
-                            <a href="mission.html"><p class="text-lg underline-animation">About</p></a> 
-                        </div>
-                        <div class="mb-4 menu_item" :class="!open ? 'exit' : 'active'"> 
-                            <a href="chi-siamo.html"><p class="text-lg underline-animation">Community</p></a> 
-                        </div>
-                        <div class="mb-4 menu_item" :class="!open ? 'exit' : 'active'"> 
-                            <a href="progetti.html"><p class="text-lg underline-animation">Support</p></a> 
-                        </div>
-                        <div class="mb-4 menu_item" :class="!open ? 'exit' : 'active'"> 
-                            <a href="reports.html"><p class="text-lg underline-animation">Login</p></a> 
-                        </div>
-                        <div class="mb-4 menu_item" :class="!open ? 'exit' : 'active'"> 
-                            <a href="eventi.html"><p class="text-lg underline-animation">Account</p></a> 
-                        </div>
-                        <div class="mb-4 menu_item" :class="!open ? 'exit' : 'active'"> 
-                            <a href="osservatori.html"><p class="text-lg underline-animation">Cart</p></a> 
-                        </div>
+                        <?php get_template_part('template-parts/menu','mobile'); ?>
                     </div>
                 </div>
             </div>
