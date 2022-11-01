@@ -50,4 +50,4 @@
 
 
     <!-- button scroll top -->
-    <a class="shadow bg-white hover:bg-lsc-lightgray hover:text-white text-2xl text-lsc-orange" id="button"><i class="fa-solid fa-chevron-up transform translate-y-3"></i></a>
+    <a class="shadow bg-steam-dark border-2 border-steam-blue text-white hover:bg-steam-blue hover:text-white text-xl text-lsc-orange" id="button"><i class="fa-solid fa-chevron-up transform translate-y-2"></i></a>

@@ -104,7 +104,7 @@
             <?php endwhile; ?>
         </div>
         <!-- pagination -->
-        <div class="w-full lg:w-96 mx-auto flex justify-between mt-8 text-sm">
+        <div class="mx-auto flex mt-8 text-sm pagination">
             <?php
                 $total_pages = $query->max_num_pages;
                 if ($total_pages > 1){
@@ -113,7 +113,9 @@
                         'base' => str_replace( $big, '%#%', get_pagenum_link( $big ) ),
                         'format' => '?paged=%#%',
                         'current' => max( 1, get_query_var('paged') ),
-                        'total' => $query->max_num_pages
+                        'total' => $query->max_num_pages,
+                        'prev_text' => '<i class="fa-solid fa-caret-left"></i>',
+                        'next_text' => '<i class="fa-solid fa-caret-right"></i>',
                     ) );
                 }
                 wp_reset_postdata();

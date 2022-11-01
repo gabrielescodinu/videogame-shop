@@ -1,6 +1,4 @@
-<?php
-    get_header();
-?>
+<?php get_header(); ?>
 
 <!-- search -->
 <div data-aos="fade-up" class="p-8 lg:px-24 4xl:px-96 pt-40">
@@ -35,7 +33,14 @@
                 <p><?php _e( 'No Search Results found', 'nd_dosth' ); ?></p>
         <?php endif; ?>
     </div>
-    <div class="w-full lg:w-96 mx-auto flex justify-between mt-8 text-sm"><?php the_posts_pagination(); ?></div>
+    <div class="mx-auto flex justify-between mt-8 text-sm pagination">
+        <?php the_posts_pagination( array(
+                'mid_size'  => 2,
+                'prev_text' => '<i class="fa-solid fa-caret-left"></i>',
+                'next_text' => '<i class="fa-solid fa-caret-right"></i>',
+            )); 
+        ?>
+    </div>
 </div>
 
 <?php get_footer(); ?>
