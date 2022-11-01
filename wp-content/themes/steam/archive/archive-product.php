@@ -57,7 +57,7 @@
             <?php endwhile; ?>
         </div>
         <!-- pagination -->
-        <div data-aos="fade-up" class="w-full lg:w-1/3 mx-auto flex justify-between mt-8 text-sm">
+        <div class="w-full lg:w-96 mx-auto flex justify-between mt-8 text-sm">
             <?php
                 $total_pages = $query->max_num_pages;
                 if ($total_pages > 1){
@@ -81,7 +81,7 @@
             <?php
                 $query = new WP_Query( 
                     array(
-                        'posts_per_page'=> 4,
+                        'posts_per_page'=> 1,
                         'post_type'=>'product',
                         'paged' => get_query_var('paged') ? get_query_var('paged') : 1,
                         'order' => 'DESC',
@@ -104,7 +104,7 @@
             <?php endwhile; ?>
         </div>
         <!-- pagination -->
-        <div data-aos="fade-up" class="w-full lg:w-1/3 mx-auto flex justify-between mt-8 text-sm">
+        <div class="w-full lg:w-96 mx-auto flex justify-between mt-8 text-sm">
             <?php
                 $total_pages = $query->max_num_pages;
                 if ($total_pages > 1){

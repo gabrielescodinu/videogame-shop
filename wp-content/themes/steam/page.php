@@ -7,5 +7,7 @@
         get_template_part( 'checkout' );
     } elseif (is_account_page() )  {  
         get_template_part( 'account' );
+    } else {
+        get_template_part( 'archive/archive-product' );
     }
 ?>
