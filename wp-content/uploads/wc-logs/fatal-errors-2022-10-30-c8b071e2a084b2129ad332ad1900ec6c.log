@@ -1,8 +1,0 @@
-2022-10-30T19:11:28+00:00 CRITICAL Uncaught Error: Call to undefined function shape_content_nav() in /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-content/themes/steam/search.php:14
-Stack trace:
-#0 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-includes/template-loader.php(106): include()
-#1 /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-blog-header.php(19): require_once('/Users/gabriele...')
-#2 /Users/gabrielescodinu/Documents/Sites/steam/app/public/index.php(17): require('/Users/gabriele...')
-#3 {main}
-  thrown in /Users/gabrielescodinu/Documents/Sites/steam/app/public/wp-content/themes/steam/search.php alla riga 14
-
