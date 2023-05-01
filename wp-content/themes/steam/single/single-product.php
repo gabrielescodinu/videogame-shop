@@ -14,7 +14,8 @@
             <p data-aos="fade-right" data-aos-delay="100" class="mt-8"><?php echo limit_text(get_the_content(), 30); ?></p>
             <p class="mt-4 text-xs">Available on: PS5, Xbox, PC</p>
             <p data-aos="fade-up" data-aos-delay="200" class="text-2xl mt-8 text-steam-blue"><?php echo $product->get_price(); ?></p>
-            <div data-aos="fade-up" data-aos-delay="300" class="mt-8"><a href="<?php echo get_site_url(); ?>/action/?add-to-cart=<?php echo $product->get_id(); ?>"><button style="border: 3px solid #66c0f4" class="slide uppercase font-bold text-xl px-8 py-2 text-white">Add to cart <i class="fa-solid fa-cart-shopping"></i></button></a></div>
+            <!-- <div data-aos="fade-up" data-aos-delay="300" class="mt-8"><a href="<?php echo get_site_url(); ?>/action/?add-to-cart=<?php echo $product->get_id(); ?>"><button style="border: 3px solid #66c0f4" class="slide uppercase font-bold text-xl px-8 py-2 text-white">Add to cart <i class="fa-solid fa-cart-shopping"></i></button></a></div> -->
+            <button class="button product_type_simple add_to_cart_button ajax_add_to_cart " data-product_id="<?php echo $product->get_id(); ?>" data-quantity="1" aria-label="Add “<?php echo the_title(); ?>” to your cart">Add to cart</button>
         </div>
     </div>
 
