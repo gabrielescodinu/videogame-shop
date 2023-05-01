@@ -475,8 +475,8 @@ function ai1wm_archive_file( $blog_id = null ) {
 	$name[] = parse_url( get_site_url( $blog_id ), PHP_URL_HOST );
 
 	// Add path
-	if ( ( $path = explode( '/', parse_url( get_site_url( $blog_id ), PHP_URL_PATH ) ) ) ) {
-		foreach ( $path as $directory ) {
+	if ( ( $path = parse_url( get_site_url( $blog_id ), PHP_URL_PATH ) ) ) {
+		foreach ( explode( '/', $path ) as $directory ) {
 			if ( $directory ) {
 				$name[] = $directory;
 			}
@@ -484,10 +484,10 @@ function ai1wm_archive_file( $blog_id = null ) {
 	}
 
 	// Add year, month and day
-	$name[] = date( 'Ymd' );
+	$name[] = date_i18n( 'Ymd' );
 
 	// Add hours, minutes and seconds
-	$name[] = date( 'His' );
+	$name[] = date_i18n( 'His' );
 
 	// Add unique identifier
 	$name[] = ai1wm_generate_random_string( 6, false );
@@ -508,8 +508,8 @@ function ai1wm_archive_folder( $blog_id = null ) {
 	$name[] = parse_url( get_site_url( $blog_id ), PHP_URL_HOST );
 
 	// Add path
-	if ( ( $path = explode( '/', parse_url( get_site_url( $blog_id ), PHP_URL_PATH ) ) ) ) {
-		foreach ( $path as $directory ) {
+	if ( ( $path = parse_url( get_site_url( $blog_id ), PHP_URL_PATH ) ) ) {
+		foreach ( explode( '/', $path ) as $directory ) {
 			if ( $directory ) {
 				$name[] = $directory;
 			}
@@ -538,9 +538,9 @@ function ai1wm_archive_bucket( $blog_id = null ) {
 	}
 
 	// Add path
-	if ( ( $path = explode( '/', parse_url( get_site_url( $blog_id ), PHP_URL_PATH ) ) ) ) {
-		foreach ( $path as $directory ) {
-			if ( $directory = strtolower( preg_replace( '/[^A-Za-z0-9\-]/', '', $directory ) ) ) {
+	if ( ( $path = parse_url( get_site_url( $blog_id ), PHP_URL_PATH ) ) ) {
+		foreach ( explode( '/', $path ) as $directory ) {
+			if ( ( $directory = strtolower( preg_replace( '/[^A-Za-z0-9\-]/', '', $directory ) ) ) ) {
 				$name[] = $directory;
 			}
 		}
@@ -568,9 +568,9 @@ function ai1wm_archive_vault( $blog_id = null ) {
 	}
 
 	// Add path
-	if ( ( $path = explode( '/', parse_url( get_site_url( $blog_id ), PHP_URL_PATH ) ) ) ) {
-		foreach ( $path as $directory ) {
-			if ( $directory = strtolower( preg_replace( '/[^A-Za-z0-9\-]/', '', $directory ) ) ) {
+	if ( ( $path = parse_url( get_site_url( $blog_id ), PHP_URL_PATH ) ) ) {
+		foreach ( explode( '/', $path ) as $directory ) {
+			if ( ( $directory = strtolower( preg_replace( '/[^A-Za-z0-9\-]/', '', $directory ) ) ) ) {
 				$name[] = $directory;
 			}
 		}
@@ -598,8 +598,8 @@ function ai1wm_archive_project( $blog_id = null ) {
 	}
 
 	// Add path
-	if ( ( $path = explode( '/', parse_url( get_site_url( $blog_id ), PHP_URL_PATH ) ) ) ) {
-		foreach ( $path as $directory ) {
+	if ( ( $path = parse_url( get_site_url( $blog_id ), PHP_URL_PATH ) ) ) {
+		foreach ( explode( '/', $path ) as $directory ) {
 			if ( $directory ) {
 				$name[] = $directory;
 			}
@@ -628,9 +628,9 @@ function ai1wm_archive_share( $blog_id = null ) {
 	}
 
 	// Add path
-	if ( ( $path = explode( '/', parse_url( get_site_url( $blog_id ), PHP_URL_PATH ) ) ) ) {
-		foreach ( $path as $directory ) {
-			if ( $directory = strtolower( preg_replace( '/[^A-Za-z0-9\-]/', '', $directory ) ) ) {
+	if ( ( $path = parse_url( get_site_url( $blog_id ), PHP_URL_PATH ) ) ) {
+		foreach ( explode( '/', $path ) as $directory ) {
+			if ( ( $directory = strtolower( preg_replace( '/[^A-Za-z0-9\-]/', '', $directory ) ) ) ) {
 				$name[] = $directory;
 			}
 		}
@@ -1933,6 +1933,8 @@ function ai1wm_get_htaccess() {
 	if ( is_file( AI1WM_WORDPRESS_HTACCESS ) ) {
 		return @file_get_contents( AI1WM_WORDPRESS_HTACCESS );
 	}
+
+	return '';
 }
 
 /**
@@ -1944,6 +1946,8 @@ function ai1wm_get_webconfig() {
 	if ( is_file( AI1WM_WORDPRESS_WEBCONFIG ) ) {
 		return @file_get_contents( AI1WM_WORDPRESS_WEBCONFIG );
 	}
+
+	return '';
 }
 
 /**

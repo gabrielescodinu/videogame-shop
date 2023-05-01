@@ -3,14 +3,14 @@
  * Plugin Name: WooCommerce Blocks
  * Plugin URI: https://github.com/woocommerce/woocommerce-gutenberg-products-block
  * Description: WooCommerce blocks for the Gutenberg editor.
- * Version: 8.5.2
+ * Version: 9.8.5
  * Author: Automattic
  * Author URI: https://woocommerce.com
  * Text Domain:  woo-gutenberg-products-block
- * Requires at least: 6.0
- * Requires PHP: 7.0
- * WC requires at least: 6.7
- * WC tested up to: 6.8
+ * Requires at least: 6.1
+ * Requires PHP: 7.2
+ * WC requires at least: 7.4
+ * WC tested up to: 7.5
  *
  * @package WooCommerce\Blocks
  * @internal This file is only used when running as a feature plugin.
@@ -18,11 +18,22 @@
 
 defined( 'ABSPATH' ) || exit;
 
-$minimum_wp_version = '6.0';
+$minimum_wp_version = '6.1';
 
 if ( ! defined( 'WC_BLOCKS_IS_FEATURE_PLUGIN' ) ) {
 	define( 'WC_BLOCKS_IS_FEATURE_PLUGIN', true );
 }
+
+// Declare compatibility with custom order tables for WooCommerce.
+add_action(
+	'before_woocommerce_init',
+	function () {
+		if ( class_exists( '\Automattic\WooCommerce\Utilities\FeaturesUtil' ) ) {
+			\Automattic\WooCommerce\Utilities\FeaturesUtil::declare_compatibility( 'custom_order_tables', __FILE__, true );
+		}
+	}
+);
+
 /**
  * Whether notices must be displayed in the current page (plugins and WooCommerce pages).
  *
@@ -85,7 +96,7 @@ function woocommerce_blocks_is_development_version() {
 /**
  * If development version is detected and the Jetpack constant is not defined, show a notice.
  */
-if ( woocommerce_blocks_is_development_version() && ! defined( 'JETPACK_AUTOLOAD_DEV' ) ) {
+if ( woocommerce_blocks_is_development_version() && ( ! defined( 'JETPACK_AUTOLOAD_DEV' ) || true !== JETPACK_AUTOLOAD_DEV ) ) {
 	add_action(
 		'admin_notices',
 		function () {
@@ -167,7 +178,7 @@ add_action( 'plugins_loaded', array( '\Automattic\WooCommerce\Blocks\Package', '
  *
  * @return string|false        Path to the translation file to load. False if there isn't one.
  */
-function load_woocommerce_core_json_translation( $file, $handle, $domain ) {
+function load_woocommerce_core_js_translation( $file, $handle, $domain ) {
 	if ( 'woo-gutenberg-products-block' !== $domain ) {
 		return $file;
 	}
@@ -213,7 +224,7 @@ function load_woocommerce_core_json_translation( $file, $handle, $domain ) {
 	return $lang_dir . '/woocommerce-' . $locale . '-' . $core_path_md5 . '.json';
 }
 
-add_filter( 'load_script_translation_file', 'load_woocommerce_core_json_translation', 10, 3 );
+add_filter( 'load_script_translation_file', 'load_woocommerce_core_js_translation', 10, 3 );
 
 /**
  * Filter translations so we can retrieve translations from Core when the original and the translated
@@ -275,3 +286,35 @@ function woocommerce_blocks_plugin_outdated_notice() {
 }
 
 add_action( 'admin_notices', 'woocommerce_blocks_plugin_outdated_notice' );
+
+/**
+ * Disable the Interactivity API if the required `WP_HTML_Tag_Processor` class
+ * doesn't exist, regardless of whether it was enabled manually.
+ *
+ * @param bool $enabled Current filter value.
+ * @return bool True if _also_ the `WP_HTML_Tag_Processor` class was found.
+ */
+function woocommerce_blocks_has_wp_html_tag_processor( $enabled ) {
+	return $enabled && class_exists( 'WP_HTML_Tag_Processor' );
+}
+add_filter(
+	'woocommerce_blocks_enable_interactivity_api',
+	'woocommerce_blocks_has_wp_html_tag_processor',
+	999
+);
+
+/**
+ * Load and setup the Interactivity API if enabled.
+ */
+function woocommerce_blocks_interactivity_setup() {
+	// phpcs:ignore WooCommerce.Commenting.CommentHooks.MissingHookComment
+	$is_enabled = apply_filters(
+		'woocommerce_blocks_enable_interactivity_api',
+		false
+	);
+
+	if ( $is_enabled ) {
+		require_once __DIR__ . '/src/Interactivity/woo-directives.php';
+	}
+}
+add_action( 'plugins_loaded', 'woocommerce_blocks_interactivity_setup' );
