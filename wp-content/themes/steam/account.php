@@ -1,5 +1,6 @@
 <?php
     // Template Name: Account
+  get_header(); 
 ?>
 <?php $page_title = get_the_title(); ?>
 
